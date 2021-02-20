@@ -1,0 +1,111 @@
+.header__container{
+	width: 80%;
+	margin: 0px auto;
+}
+
+.header__menu{
+	font-size: 0;
+}
+
+.header__menu > * {
+	display: inline-block;
+	position: relative;
+}
+
+.header__menu > li{
+	background-color: #000;
+	padding: 5px 10px;
+	margin-right: 5px;
+}
+
+.header__menu > li:last-child{
+	margin-right: 0;
+}
+
+.header__link{
+	font-size: 20px;
+	color: orangered;
+	font-weight: bold;
+}
+
+.header__menu li:hover .header__link{
+	color: rgb(95, 12, 12);
+}
+
+/* ===================SUBMENU====================== */
+
+.header__submenu{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	padding-top: 10px;
+	width: 150px;
+	background-color: transparent;
+	display: none;
+}
+
+.header__menu li:hover .header__submenu{
+	display: block;
+}
+
+.header__menu li:last-child .header__submenu{
+	right: 0;
+	left: auto;
+}
+
+.header__submenu li{
+	position: relative;
+	font-size: 20px;
+	background-color: blue;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.header__sublink{
+	color: yellow;
+	font-weight: bold;
+}
+
+.header__submenu li:hover .header__sublink{
+	color: black;
+}
+
+/* =================SUBSUBMENU==================== */
+
+.header__subsubmenu{
+	position: absolute;
+	top: 0;
+	left: 150px;
+	padding-left: 10px;
+	width: 150px;
+	background-color: transparent;
+	display: none;
+}
+
+.header__submenu li:hover .header__subsubmenu{
+	display: block;
+}
+
+.header__menu > li:last-child .header__subsubmenu{
+	left: -150px;
+	padding-right: 10px;
+	padding-left: 0;
+}
+
+.header__subsubmenu li{
+	font-size: 20px;
+	background-color: rgb(21, 139, 11);
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.header__subsublink{
+	color: #DF8600;
+	font-weight: bold;
+}
+
+.header__subsubmenu li:hover .header__subsublink{
+	color: rgb(126, 1, 1);
+}
